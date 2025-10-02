@@ -2,6 +2,7 @@
 
 # First Time Add Your REPO In Your VS Code.
 
+
 git init
 
 git add README.md
@@ -24,6 +25,22 @@ git push -u origin main
 
 
 
+
+# main ব্রাঞ্চের কোড gh-pages এ merge
+
+git checkout gh-pages
+
+git fetch origin
+
+git checkout -b gh-pages origin/gh-pages
+
+git merge main
+
+git push origin gh-pages
+
+
+
+
 #  লোকাল ফোল্ডারকে GitHub repo’র সাথে connect করার জন্য
 
 
@@ -39,7 +56,11 @@ git add .
 
 git commit -m "First commit from local folder"  
 
-git push -u origin main  
+git push -u origin main
+
+
+
+
 
 
 
